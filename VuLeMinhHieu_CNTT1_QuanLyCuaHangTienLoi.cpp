@@ -575,11 +575,11 @@ void viewTransactionHistory(struct Transaction transaction[], struct Product pro
 		        if(choice==1&&page>1){
 					page--;
 				}else if(choice==1&&page==1){
-		        	printf("Dang o trang dau\n");
+		        	printf("\nDang o trang dau\n");
 				}else if(choice==2 && page<total){
 					page++;
 				}else if(choice==2 && page==total){ 
-					printf("Dang o trang cuoi\n");
+					printf("\nDang o trang cuoi\n");
 				}else if(choice==3){
 					printf("\nNhap trang can tim\n",total);
 					searchChoice=luaChon(1,total);
@@ -710,3 +710,4 @@ int main(){
     }while(mainChoice!=3);
     return 0;
 }
+
